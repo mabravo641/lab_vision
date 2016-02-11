@@ -1,7 +1,7 @@
 # Warmup Questions
 
 1.  What is the clone url of this repository?
-    >   frdgdzgfd
+    >   hola
 
 2.  What is the output of the ``cal`` command?
 
