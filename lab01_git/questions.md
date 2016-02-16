@@ -1,24 +1,33 @@
 # Warmup Questions
 
 1.  What is the clone url of this repository?
-    >   hola
+    >   https://github.com/mabravo641/lab_vision/
 
 2.  What is the output of the ``cal`` command?
 
-        multi
-        line
-        answer
+	the output of cal command is a calendar displayed in a traditional format.
+    Febrero 2016
+do lu ma mi ju vi sá
+    1  2  3  4  5  6
+ 7  8  9 10 11 12 13
+14 15 16 17 18 19 20
+21 22 23 24 25 26 27
+28 29
 
 # Homework Questions
 
 1.  What is the ``grep``command?
-    >   answer
+    >   grep is used to search some text specified. I checks either name of files or line by line in texts inside files looking for a match of agiven pattern..
 
 2.  What is a *makefile*?
-    >   answer
+    >   a makefile is a file that describes the relationships between the files in a program,
+	and the states commands for updating each file. It is necesary to use make, at the begining.
 
 4.  What does the ``-prune`` option of ``find`` do? Give an example
-    >   answer
+    >   find is a function that search for files in a directory hierarchy. 
+	Prune is a boolean function which is true if douring the search it doesn't go into 
+	each directory's contents before the  directory  itself. And it is false if it does,
+	this happens when -deph is given. 
 
 5.  Where is the ``grub.cfg``  file
     >   answer
@@ -30,7 +39,7 @@
     >   answer
 
 8.  What does the ``cut`` command do?
-    >   answer
+    >   removes sections from each line of files. Deleates sections of lines in files.
 
 9.  What does the ``wget`` command do?
     >   answer
