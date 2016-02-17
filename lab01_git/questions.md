@@ -34,9 +34,9 @@ do lu ma mi ju vi sá
 
 4.  What does the ``-prune`` option of ``find`` do? Give an example
     >   find is a function that search for files in a directory hierarchy. 
-	Prune is a boolean function which is true if douring the search it doesn't go into 
-	each directory's contents before the  directory  itself. And it is false if it does,
-	this happens when -deph is given. Doing this we can ignore directories. (%man find)
+	Prune is a boolean function which is true douring the search, for the directories written before 
+	-prune, it doesn't go into each directory's contents before the  directory  itself. And it is 
+	false if it does, this happens when -deph is given. Doing this we can ignore directories. (%man find)
 
 	Example: find / -name *cfg* -prune | wc -l
 	171	
@@ -48,7 +48,7 @@ do lu ma mi ju vi sá
 	/usr/share/doc/grub-common/examples/grub.cfg
 
 6.  How many files with ``gnu`` in its name are in ``/usr/src``
-    >   using: find /usr/src -name gnu |wc -l
+    >   using: find /usr/src -name gnu | wc -l
 	0
 
 7.  How many files contain the word ``gpl`` inside in ``/usr/src``
@@ -85,14 +85,15 @@ do lu ma mi ju vi sá
 	3
 
 12. What command will produce a table of Users and Shells sorted by shell (tip: using ``cut`` and ``sort``)
-    >   cut -d : -f 1,7 /etc/passwd | sort -t : -k2 (
+    >   cut -d : -f 1,7 /etc/passwd | sort -t : -k2 
 
 13. What command will produce the number of users with shell ``/sbin/nologin`` (tip: using ``grep`` and ``wc``)
-    >   answer
+    >   cat/etc/passwd | cut -d: -f7 | grep /sbin/nologin| wc -l
 
 15. Create a script for finding duplicate images based on their content (tip: hash or checksum)
     You may look in the internet for ideas, but please indicate the source of any code you use
     Save this script as ``find_duplicates.sh`` in this directory and commit your changes to github
+    >   (http://www.tomshardware.com/forum/236826-50-linux-shell-script-find-duplicate-images)
 
 16. What is the meaning of ``#! /bin/bash`` at the start of scripts?
     >   That is called a shebang, it tells the shell what program to interpret the script with, when executed.
